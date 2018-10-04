@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataModel\Category.cs" />
+    <Compile Include="DataModel\xblrData.cs" />
     <Compile Include="Data\Context.cs" />
     <Compile Include="Migrations\201810021825319_init.cs" />
     <Compile Include="Migrations\201810021825319_init.Designer.cs">

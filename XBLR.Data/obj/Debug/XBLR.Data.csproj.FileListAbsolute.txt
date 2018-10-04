@@ -10,3 +10,15 @@ c:\Users\ashok\documents\Projects\XBLR\XBLR.Data\bin\Debug\EntityFramework.xml
 c:\Users\ashok\documents\Projects\XBLR\XBLR.Data\bin\Debug\EntityFramework.SqlServer.xml
 c:\Users\ashok\documents\Projects\XBLR\XBLR.Data\obj\Debug\XBLR.Data.Migrations.init.resources
 c:\Users\ashok\documents\Projects\XBLR\XBLR.Data\obj\Debug\XBLR.Data.csproj.GenerateResource.Cache
+E:\XBLR\XBLR.Data\bin\Debug\XBLR.Data.dll.config
+E:\XBLR\XBLR.Data\bin\Debug\XBLR.Data.dll
+E:\XBLR\XBLR.Data\bin\Debug\XBLR.Data.pdb
+E:\XBLR\XBLR.Data\bin\Debug\EntityFramework.dll
+E:\XBLR\XBLR.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\XBLR\XBLR.Data\bin\Debug\EntityFramework.xml
+E:\XBLR\XBLR.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\XBLR\XBLR.Data\obj\Debug\XBLR.Data.csprojResolveAssemblyReference.cache
+E:\XBLR\XBLR.Data\obj\Debug\XBLR.Data.Migrations.init.resources
+E:\XBLR\XBLR.Data\obj\Debug\XBLR.Data.csproj.GenerateResource.Cache
+E:\XBLR\XBLR.Data\obj\Debug\XBLR.Data.dll
+E:\XBLR\XBLR.Data\obj\Debug\XBLR.Data.pdb

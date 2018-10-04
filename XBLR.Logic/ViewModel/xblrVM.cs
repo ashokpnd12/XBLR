@@ -9,6 +9,7 @@ namespace XBLR.Logic.ViewModel
 {
     public class xblrVM
     {
+        public int id { get; set; }
         [Display(Name = "Element Name")]
         public string element_name { get; set; }
         [Display(Name = "Assessment Year")]

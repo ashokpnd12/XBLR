@@ -13,7 +13,10 @@ namespace XBLR.Logic.General
     {
         public static void RegisterMappings()
         {
-            //Mapper.Map<Category, CategoryVM>();
+            var config = new MapperConfiguration(cfg => {
+                cfg.CreateMap<xblrData, xblrVM>();
+            });
+            //var configStack = new MapperConfiguration(cfg => { cfg.CreateMap<xblrData, xblrVM>().ForMember(dest => dest.element_name, opts => opts.MapFrom(src => src.element_name)); });
         }
     }
 }

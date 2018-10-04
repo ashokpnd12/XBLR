@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.OleDb;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -9,9 +10,24 @@ namespace XBLR.UI.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\\SampleDb.mdb";
         public ActionResult Index()
         {
+            //dummy code to fetch data from MS Access
+            OleDbConnection conn = new OleDbConnection(connectionString);
+            string sql = "select * from tbl_xblr";
+            OleDbCommand cmd = new OleDbCommand(sql, conn);
+            conn.Open();
+            OleDbDataReader reader;
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Console.WriteLine(reader);
+            }
+            reader.Close();
+            conn.Close();
+
+            //dummy data for xblr
             List<xblrVM> xblr = new List<xblrVM>()
             {
                 new xblrVM { element_name="Disclosure of general information about company [Abstract]",assessment_year="",financial_year="",foot_notes="",specific_business_rule="" },
