@@ -14,18 +14,25 @@ namespace XBLR.UI.Controllers
         public ActionResult Index()
         {
             //dummy code to fetch data from MS Access
-            OleDbConnection conn = new OleDbConnection(connectionString);
-            string sql = "select * from tbl_xblr";
-            OleDbCommand cmd = new OleDbCommand(sql, conn);
-            conn.Open();
-            OleDbDataReader reader;
-            reader = cmd.ExecuteReader();
-            while (reader.Read())
+            try
             {
-                Console.WriteLine(reader);
+                OleDbConnection conn = new OleDbConnection(connectionString);
+                string sql = "select * from tbl_xblr";
+                OleDbCommand cmd = new OleDbCommand(sql, conn);
+                conn.Open();
+                OleDbDataReader reader;
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Console.WriteLine(reader);
+                }
+                reader.Close();
+                conn.Close();
             }
-            reader.Close();
-            conn.Close();
+            catch(Exception ex)
+            {
+                Console.Write(ex.Message);
+            }
 
             //dummy data for xblr
             List<xblrVM> xblr = new List<xblrVM>()
