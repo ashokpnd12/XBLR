@@ -1,0 +1,66 @@
+﻿@model IEnumerable<XBLR.Logic.ViewModel.xblrVM>
+@using System.Web.Optimization
+@{
+    ViewBag.Title = "XBLR";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <h1>XBLR of Relyon</h1>
+    @Scripts.Render("~/bundles/jquery")
+    @Styles.Render("~/bundles/css")
+    <link href="~/Content/css/divStyle.css" rel="stylesheet" />
+</head>
+<body>    
+    <div class="mainDiv">
+        @Html.Partial("_Category")
+        <div id="ResultTable" class="rightDiv"/>
+
+    </div>
+</body>
+</html>
+
+<script>
+    dataValue = @Html.Raw(Json.Encode(Model));
+    configuration = {
+        data: dataValue,
+        colHeaders: ['','Element Name', '2017-2018','2016-2017','Foot Notes', 'Specific Business Rule'],
+        columnSorting: true,
+        columns: [
+            {
+                readOnly:true
+            },
+            {
+                data: 'element_name',
+                readOnly:true
+            },
+                {
+                    data: 'assessment_year',
+                    type: 'date',
+                    dateFormate: 'DD/MM/YYYY'
+                },
+                {
+                    data: 'financial_year',
+                    type: 'date',
+                    dateFormate: 'DD/MM/YYYY'
+                },
+                {
+                    data: 'foot_notes'
+                },
+                {
+                    data: 'specific_business_rule'
+                }
+        ]
+    };
+
+    tblExcel = new Handsontable(document.getElementById('ResultTable'),
+    configuration);
+    tblExcel.render();
+    $(function () {
+        $('#jstree').jstree();
+        $('#jstree').on("changed.jstree", function (e, data) {
+            console.log(data.selected);
+        });
+    });
+</script>

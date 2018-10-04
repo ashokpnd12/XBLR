@@ -1,0 +1,19 @@
+﻿    .mainDiv{
+            width:95%;
+        }
+
+        .leftDiv {
+            float: left;
+            border:outset;
+            height:415px;
+            width:352px;
+            overflow-y: auto;
+            overflow-x:auto;
+        }
+
+        .rightDiv {
+            height: 415px;
+            width: 865px;
+            overflow-y: auto;
+            float: right;
+        }
