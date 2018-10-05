@@ -37,13 +37,13 @@ namespace XBLR.UI.Controllers
             //dummy data for xblr
             List<xblrVM> xblr = new List<xblrVM>()
             {
-                new xblrVM { element_name="Disclosure of general information about company [Abstract]",assessment_year="",financial_year="",foot_notes="",specific_business_rule="" },
+                new xblrVM { element_name="Disclosure of general information about company [Abstract]",assessment_year="05/10/2018",financial_year="",foot_notes="",specific_business_rule="" },
                 new xblrVM { element_name="Disclosure of company information [Abstract]",assessment_year="",financial_year="",foot_notes="",specific_business_rule="" },
                 new xblrVM { element_name="Name of company",assessment_year="",financial_year="",foot_notes="",specific_business_rule="" },
                 new xblrVM { element_name="Corporate identity number",assessment_year="",financial_year="",foot_notes="",specific_business_rule="" },
                 new xblrVM { element_name="Permanent account number of entity",assessment_year="",financial_year="",foot_notes="",specific_business_rule="" },
                 new xblrVM { element_name="Address of registered office of company",assessment_year="",financial_year="",foot_notes="",specific_business_rule="" },
-                new xblrVM { element_name="Type of industry",assessment_year="",financial_year="",foot_notes="",specific_business_rule="" },
+                new xblrVM { element_name="Type of industry",assessment_year="",financial_year="11/04/2018",foot_notes="",specific_business_rule="" },
                 new xblrVM { element_name="Registration date",assessment_year="",financial_year="",foot_notes="",specific_business_rule="" },
                 new xblrVM { element_name="Category/sub-category of company",assessment_year="",financial_year="",foot_notes="",specific_business_rule="" },
                 new xblrVM { element_name="whether company is listed company",assessment_year="",financial_year="",foot_notes="",specific_business_rule="" },
