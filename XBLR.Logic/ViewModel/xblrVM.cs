@@ -13,8 +13,10 @@ namespace XBLR.Logic.ViewModel
         [Display(Name = "Element Name")]
         public string element_name { get; set; }
         [Display(Name = "Assessment Year")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{dd/MM/yyyy}")]
         public string assessment_year { get; set; }
         [Display(Name = "Financial Year")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{dd/MM/yyyy}")]
         public string financial_year { get; set; }
         [Display(Name = "Foot Notes")]
         public string foot_notes { get; set; }

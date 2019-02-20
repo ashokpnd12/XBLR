@@ -200,6 +200,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\XBLR.Data\XBLR.Data.csproj">
+      <Project>{1EF727CF-9FBB-4EED-A6DD-5F9DE774E632}</Project>
+      <Name>XBLR.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\XBLR.Logic\XBLR.Logic.csproj">
       <Project>{5b637081-1586-4ad9-9a3f-d02292b7b053}</Project>
       <Name>XBLR.Logic</Name>
